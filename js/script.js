@@ -24,6 +24,9 @@ let pin = pinBtn.value
         numberBtn.value = ""
         pinBtn.value = ""
         infoWrong.removeAttribute("hidden")
+        setTimeout(()=>{
+            infoWrong.setAttribute("hidden" , true)
+        }, 2000)
         infoRight.setAttribute("hidden" , true)
     }
 })
